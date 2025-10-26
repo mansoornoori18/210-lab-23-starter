@@ -17,7 +17,8 @@ public:
     Goat(string n) {name = n; age = 0; color = "";}
     // constructor with name and age
     Goat(string n, int a){name = n; age = a; color = "";}
-    Goat(string n,int a, string c){name = n; age = a; color}
+    // constructor with all parameter
+    Goat(string n,int a, string c){name = n; age = a; color = c;}
 
 
     
@@ -31,6 +32,9 @@ public:
     string get_color() const        { return color; }
 
     // write overloaded < operator for the std::list
+    bool operator< (const Goat&other) const {
+        return name < other.name;
+    }
 };
 
 #endif
