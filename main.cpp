@@ -42,6 +42,13 @@ int main() {
             case 1: add_goat(trip, names, colors); break; // add a goat
             case 2: delete_goat(trip); break;
             case 3: display_trip(trip); break;
+            case 4:
+            cout << "\nGood Bye!\n";
+            again = false;
+            break;
+            default:
+            cout << "Invalid Option,Try again.\n";
+
         }
     }
 
