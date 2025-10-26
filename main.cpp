@@ -26,11 +26,15 @@ int main() {
     int i = 0;
     while (fin >> names[i++]);
     fin.close();
+
     ifstream fin1("colors.txt");
     string colors[SZ_COLORS];
     i = 0;
     while (fin1 >> colors[i++]);
     fin1.close();
+
+    while(again){
+    }
 
 
 
