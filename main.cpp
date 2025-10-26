@@ -1,8 +1,11 @@
-#include <iostream>
-#include <fstream>
+#include <iostream> // 210 class OOP || Mansoor Noori
+#include <fstream>  // Visual Studio Code
 #include <iomanip>
 #include <list>
 #include "Goat.h"
+#include<cstdlib>
+#include<ctime>
+
 using namespace std;
 
 const int SZ_NAMES = 200, SZ_COLORS = 25, MAX_AGE = 20;
