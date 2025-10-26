@@ -17,6 +17,7 @@ void display_trip(list<Goat> trip);
 int main_menu();
 
 int main() {
+
     srand(time(0));
     bool again;
 
@@ -52,9 +53,9 @@ int main() {
         }
     }
 
-
-
-
     return 0;
 }
+// main menu function.
+int main_menu();
+int choice;
 
