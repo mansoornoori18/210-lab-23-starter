@@ -34,6 +34,10 @@ int main() {
     fin1.close();
 
     while(again){
+        int choice = main_menu();
+        switch(choice){
+            case 1: add_goat(trip, names, colors); break;
+        }
     }
 
 
