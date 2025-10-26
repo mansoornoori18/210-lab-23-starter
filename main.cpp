@@ -21,22 +21,27 @@ int main() {
     bool again;
 
     // read & populate arrays for names and colors
+    // read names form the names.txt
     ifstream fin("names.txt");
     string names[SZ_NAMES];
     int i = 0;
     while (fin >> names[i++]);
     fin.close();
-
+    // reads colors from the color.txt
     ifstream fin1("colors.txt");
     string colors[SZ_COLORS];
     i = 0;
     while (fin1 >> colors[i++]);
     fin1.close();
+    // list to store all the goats in the list 
+    list<Goat> trip;
 
     while(again){
         int choice = main_menu();
         switch(choice){
-            case 1: add_goat(trip, names, colors); break;
+            case 1: add_goat(trip, names, colors); break; // add a goat
+            case 2: delete_goat(trip); break;
+            case 3: display_trip(trip); break;
         }
     }
 
